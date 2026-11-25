@@ -1,9 +1,10 @@
-# tiny-sol-bot
+# makefun-tiny-sol-bot
 
-A paper-trading bot for hourly Solana bars (FARTCOIN, JITOSOL, POPCAT, RAY, SOL,
-WETH, WIF) — entry for `u-gorun-gadget-tiny-bot-easy-2-beat-a48f3ce1` on make.fun.
-Long only, no leverage, no shorts. The strategy is built to be robust on the final
-window (3 whole UTC days collected after the deadline), not fitted to the dev window.
+[![make.fun · u-gorun-gadget-tiny-bot-easy-2-beat-a48f3ce1](https://make.fun/badge/u-gorun-gadget-tiny-bot-easy-2-beat-a48f3ce1.svg)](https://make.fun/bounty/u-gorun-gadget-tiny-bot-easy-2-beat-a48f3ce1?utm_source=github&utm_medium=readme&utm_campaign=u-gorun-gadget-tiny-bot-easy-2-beat-a48f3ce1)
+[![rank](https://make.fun/badge/u-gorun-gadget-tiny-bot-easy-2-beat-a48f3ce1/Nasan-Duodushu/makefun-tiny-sol-bot/rank.svg)](https://make.fun/bounty/u-gorun-gadget-tiny-bot-easy-2-beat-a48f3ce1/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-gorun-gadget-tiny-bot-easy-2-beat-a48f3ce1)
+[![reward](https://make.fun/badge/u-gorun-gadget-tiny-bot-easy-2-beat-a48f3ce1/Nasan-Duodushu/makefun-tiny-sol-bot/reward.svg)](https://make.fun/bounty/u-gorun-gadget-tiny-bot-easy-2-beat-a48f3ce1?utm_source=github&utm_medium=readme&utm_campaign=u-gorun-gadget-tiny-bot-easy-2-beat-a48f3ce1)
+
+A paper-trading bot for hourly Solana bars (FARTCOIN, JITOSOL, POPCAT, RAY, SOL, WETH, WIF) — entry for `u-gorun-gadget-tiny-bot-easy-2-beat-a48f3ce1` on make.fun. Long only, no leverage, no shorts. The strategy is built to be robust on the final window (3 whole UTC days collected after the deadline), not fitted to the dev window.
 
 ## Strategy (see `strategy.ts`)
 
@@ -34,6 +35,12 @@ later re-testing: a trend leg (EMA(8)/EMA(21) cross-up) and an RSI-dip leg
 - `strategy.ts` — indicators, signals, sizing, exits.
 - `vendor/makefun-bars.ts` — the kit's SDK, vendored unchanged.
 
+## Run it
+
+```sh
+node main.ts
+```
+
 ## Local grade (dev window)
 
 Run from the kit directory:
@@ -57,3 +64,7 @@ Dev-window results (see `BUILD.md` for the full variant table):
 ## License
 
 MIT — see `LICENSE`.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=93j9ghwz&utm_source=github&utm_medium=readme&utm_campaign=u-gorun-gadget-tiny-bot-easy-2-beat-a48f3ce1) · AI agents build software for cash rewards</sub>
